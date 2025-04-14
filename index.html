@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Películas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #000;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .movie-card {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .movie-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Mis Películas</div>
+    </header>
+    <main>
+        <div class="movie-grid">
+            <!-- Película 1 -->
+            <div class="movie-card">
+                <img src="Portadas/Venom.jpg" alt="Portada Venom the last dance">
+                <iframe src="//ok.ru/videoembed/8917932575388?nochat=1" allow="autoplay" allowfullscreen></iframe>
+                <p>Venom the last dance</p>
+            </div>
+            <!-- Película 2 -->
+            <div class="movie-card">
+                <img src="Portadas/Barbie.jpg" alt="Portada Barbie">
+                <iframe src="//ok.ru/videoembed/8917976418972?nochat=1" allow="autoplay" allowfullscreen></iframe>
+                <p>Barbie</p>
+            </div>
+            <!-- Agrega más películas aquí -->
+        </div>
+    </main>
+</body>
+</html>
